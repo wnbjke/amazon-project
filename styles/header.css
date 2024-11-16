@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(19, 25, 33);
+  padding: 0px 30px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.left-section:hover {
+  outline: 1px solid white;
+  border-radius: 4px;
+}
+
+.amazon-logo {
+  margin-top: 5px;
+  height: 30px;
+}
+
+.amazon-logo-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0px solid white;
+}
+
+.header-middle-section {
+  display: flex;
+  max-width: 850px;
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+
+.input-search {
+  padding-left: 15px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 16px;
+  flex: 1;
+  width: 0px;
+}
+
+.input-search:focus {
+  border: none;
+  outline: 2px solid orange;
+}
+
+.search-button {
+  background-color: rgb(254, 189, 105);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  margin-left: -1px;
+  cursor: pointer;
+  padding: 1px 10px 1px 10px;
+  height: 40px;
+  width: 45px;
+}
+
+.srch-icon {
+  height: 22px;
+}
+
+.right-section {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-orders {
+  padding: 5px;
+}
+
+.header-orders:hover {
+  outline: 1px solid white;
+  border-radius: 4px;
+}
+
+.returns-text, .orders-text {
+  display: block;
+  color: white;
+}
+
+.orders-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.orders-link {
+  text-decoration: none;
+}
+
+.cart-header {
+  margin-left: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.cart-header:hover {
+  outline: 1px solid white;
+  border-radius: 4px;
+}
+
+.cart-link {
+  text-decoration: none;
+}
+
+.cart-quantity {
+  font-size: 16px;
+  font-weight: 600;
+  color: orange;
+  position: absolute;
+  top: 2px;
+  right: 50px;
+}
+.cart-text {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 12px;
+  color: white;
+}
+
+.cart-logo {
+  height: 36px;
+}
