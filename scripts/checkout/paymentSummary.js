@@ -1,5 +1,5 @@
 import {cart} from '../../data/cart.js';
-import {products} from '../../data/products.js';
+import {products, toDollars} from '../../data/products.js';
 import {deliveryDates} from '../../data/dates.js';
 
 export function renderPaymentSummary() {
@@ -40,23 +40,23 @@ export function renderPaymentSummary() {
           <div class="payment-summary-title">Order Summary</div>
           <div class="payment-summary-items">
             <div>Items (${itemsQuantity}):</div>
-            <div>$${(productPriceCents / 100).toFixed(2)}</div>
+            <div>$${toDollars(productPriceCents)}</div>
           </div>
           <div class="payment-summary-items">
             <div>Shipping & handling:</div>
-            <div>$${(optionPriceCents / 100).toFixed(2)}</div>
+            <div>$${toDollars(optionPriceCents)}</div>
           </div>
           <div class="payment-summary-items">
             <div>Total before tax:</div>
-            <div>$${(totalBeforeTax / 100).toFixed(2)}</div>
+            <div>$${toDollars(totalBeforeTax)}</div>
           </div>
           <div class="payment-summary-items payment-summary-items-border">
             <div>Estimated tax (10%):</div>
-            <div>$${(estimatedTax / 100).toFixed(2)}</div>
+            <div>$${toDollars(estimatedTax)}</div>
           </div>
           <div class="payment-summary-items payment-summary-total">
             <div>Order total:</div>
-            <div>$${(totalAfterTax / 100).toFixed(2)}</div>
+            <div>$${toDollars(totalAfterTax)}</div>
           </div>
         </div>
         <div class="payment-summary-method">
